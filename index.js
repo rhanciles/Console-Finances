@@ -106,3 +106,12 @@ var net = figures.reduce(function(a, b){
 }, 0);
 
 console.log("Total: $" + net);
+
+// Sort 'figures' array 
+let losses = figures.sort()
+
+// Split the list to Profits and Losses.
+const profits = losses.splice(12);
+
+console.log(losses);
+console.log(profits);
