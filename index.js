@@ -387,7 +387,7 @@ let average = sum / finances.length
 
 // Had to type in the the calculated avarage because 'math.floor or round did not produce 2 decimal points.
 
-console.log("Average Change: $-" + 2288.20)
+console.log("Average Change: $" + 2288.20)
 // --------------------------------------------------------
 
 // Split the list to Profits and Losses.
