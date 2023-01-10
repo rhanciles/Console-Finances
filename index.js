@@ -86,3 +86,32 @@ var finances = [
 ['Jan-2017', 138230],
 ['Feb-2017', 671099]
 ];
+
+// Write header using 'Console.log'.
+console.log("Financial Analysis")
+console.log("----------------------------")
+
+// Write total months using the '.length' property.
+console.log("Total Months: " + finances.length)
+
+// Remove nesting, and create new array called 'accounts'.
+const accounts = finances.flat()
+
+// Separate the numbers and create new array called 'figures'.
+let figures = accounts.filter(Number);   
+
+// Calculate the net total profits/losses and log results.
+var net = figures.reduce(function(a, b){
+  return a + b;
+}, 0);
+
+console.log("Total: $" + net);
+
+// Sort 'figures' array 
+let losses = figures.sort()
+
+// Split the list to Profits and Losses.
+const profits = losses.splice(12);
+
+console.log(losses);
+console.log(profits);
