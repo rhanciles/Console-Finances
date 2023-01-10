@@ -115,3 +115,31 @@ const profits = losses.splice(12);
 
 console.log(losses);
 console.log(profits);
+
+// Finds the highest(>) number using the reduce property and logs the results.
+const profitMax = profits.reduce(max)
+
+function max(a, b) {
+    if (a > b) {
+        return a;
+    } else {
+        return b;
+    }
+}
+
+// Finds the lowest(<) number-----------------
+console.log(profitMax)
+
+const lossesMax = losses.reduce(loss)
+
+function loss(a, b) {
+    if (a < b) {
+        return a;
+    } else {
+        return b;
+    }
+}
+
+console.log(lossesMax)
+
+// End of 'reduce' function.
