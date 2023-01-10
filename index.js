@@ -90,3 +90,7 @@ var finances = [
 /* Write header using 'Console.log */
 console.log("Financial Analysis")
 console.log("----------------------------")
+
+// Write total months using the '.length' property .
+console.log("Total Months: " + finances.length)
+
